@@ -36,4 +36,4 @@ println!("Codename: {}", info.get_codename());
 
 ## License
 
-`osinfo` is licensed under the MIT license. See [LICENSE]([text](https://github.com/codex-jignesh/osinfo/blob/main/LICENSE)) for the details.
+`osinfo` is licensed under the MIT license. See ([LICENSE](https://github.com/codex-jignesh/osinfo/blob/main/LICENSE)) for the details.
