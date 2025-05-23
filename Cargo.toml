@@ -24,7 +24,6 @@ keywords = [
     "os_variant",
     "os_version",
     "os_codename",
-    "os_edition",
 ]
 
 categories = ["os"]
