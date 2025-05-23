@@ -1,0 +1,57 @@
+[package]
+name = "osinfo"
+version = "1.0.0"
+edition = "2024"
+author = "Jignesh Patel <codex.jignesh@outlook.com>"
+
+build = false
+include = [
+    "Cargo.toml",
+    "src/**/*.rs",
+    "LICENSE",
+    "README.md",
+]
+autolib = false
+autobins = false
+autoexamples = false
+autotests = false
+autobenches = false
+description = "Detect the operating system type and version."
+readme = "README.md"
+keywords = [
+    "os",
+    "osinfo",
+    "os_variant",
+    "os_version",
+    "os_codename",
+    "os_edition",
+]
+
+categories = ["os"]
+license = "MIT"
+repository = "https://github.com/codex-jignesh/osinfo"
+
+[features]
+default = ["serde"]
+
+[lib]
+name = "osinfo"
+path = "src/lib.rs"
+
+[dependencies.log]
+version = "0.4"
+
+[target.'cfg(windows)'.dependencies.winreg]
+version = "0.55"
+
+
+[dependencies.serde]
+version = "1"
+features = ["derive"]
+optional = true
+
+[dev-dependencies.doc-comment]
+version = "0.3"
+
+[dev-dependencies.pretty_assertions]
+version = "1"
